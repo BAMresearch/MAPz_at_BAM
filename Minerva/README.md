@@ -18,7 +18,7 @@ It also serves as the documentation, and gives several examples on how to use th
 ## Video Showcase
 A short video showing the MAP in action and featuring some exemplary synthesis, purification, and characterization steps can be found [here](Documentation/Videos/MINERVA_Showcase.mp4).
 
-![Image](Documentation/Images/Minerva.png "MINERVA")
+![Image](Documentation/Images/Minerva_ToC.jpg "MINERVA")
 
 ## Folder Structure
 - **3D_Printed_Parts:** .sdl files for 3D printing all parts for the custom-built hardware used in this project
