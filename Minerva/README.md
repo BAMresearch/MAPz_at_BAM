@@ -20,6 +20,8 @@ It also serves as the documentation, and gives several examples on how to use th
 ## Video Showcase
 A short video showing the MAP in action and featuring some exemplary synthesis, purification, and characterization steps can be found [here](Documentation/Videos/MINERVA_Showcase.mp4).
 
+https://github.com/user-attachments/assets/51650673-b5de-43ec-b29e-ba39b8661c8e
+
 ## Folder Structure
 - **3D_Printed_Parts:** .sdl files for 3D printing all parts for the custom-built hardware used in this project
 - **API:** Essential files for MINERVA-OS including the task scheduler and all abstract base classes and metaclasses used in inheritance, as well as the API for communicating with the hardware through high-level commands
