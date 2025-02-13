@@ -14,6 +14,7 @@ The fully trained LLM Models and the raw and cleaned datasets will be made avail
 ## Video
 A short video showing the node editor, the automatic workflow generation from natural language input, and the knowledge graph generation can be found [here](Documentation/Videos/Workflow-Generator_Example.mp4).
 
+https://github.com/user-attachments/assets/2f286814-34d9-4448-8b43-3fe5becb349f
 
 ## Folder Structure
 - **Documentation:** Additional resources used in this documentation
