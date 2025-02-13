@@ -1,0 +1,724 @@
+source	target	edge
+Container-Reaction_Flask_50_mL	current hardware	has_property
+Container-Reaction_Flask_50_mL-current hardware	flaskstation	has_value
+Container-Reaction_Flask_50_mL	deck position	has_property
+Container-Reaction_Flask_50_mL-deck position	0	has_value
+Container-Reaction_Flask_50_mL	slot number	has_property
+Container-Reaction_Flask_50_mL-slot number	1	has_value
+Container-Reaction_Flask_50_mL	name	has_property
+Container-Reaction_Flask_50_mL-name	Reaction_Flask_50_mL	has_value
+Container-Reaction_Flask_50_mL	current volume	has_property
+Container-Reaction_Flask_50_mL-current volume	None	has_value
+Container-Reaction_Flask_50_mL	max volume	has_property
+Container-Reaction_Flask_50_mL-max volume	None	has_value
+Container-Reaction_Flask_50_mL	container type	has_property
+Container-Reaction_Flask_50_mL-container type	FLASK_50_ML	has_value
+Container-Reaction_Flask_50_mL	has stirbar	has_property
+Container-Reaction_Flask_50_mL-has stirbar	True	has_value
+Container-Reaction_Flask_50_mL	is capped	has_property
+Container-Reaction_Flask_50_mL-is capped	False	has_value
+Add Chemical-496	container	has_property
+Add Chemical-496-container	Reaction_Flask_50_mL	has_value
+Add Chemical-496	chemical	has_property
+Add Chemical-496-chemical	ZrOCl28 H2O	has_value
+Add Chemical-496	withdraw rate	has_property
+Add Chemical-496-withdraw rate	None	has_value
+Add Chemical-496	addition rate	has_property
+Add Chemical-496-addition rate	None	has_value
+Add Chemical-496	robot arm	has_property
+Add Chemical-496-robot arm	None	has_value
+Add Chemical-496	capper decapper	has_property
+Add Chemical-496-capper decapper	None	has_value
+Add Chemical-496	return container after addition	has_property
+Add Chemical-496-return container after addition	False	has_value
+Add Chemical-496	return chemicals after addition	has_property
+Add Chemical-496-return chemicals after addition	True	has_value
+Add Chemical-496	bottom clearance	has_property
+Add Chemical-496-bottom clearance	None	has_value
+Add Chemical-496	purging volume	has_property
+Add Chemical-496-purging volume	30mL	has_value
+Add Chemical-496	purging addition rate	has_property
+Add Chemical-496-purging addition rate	None	has_value
+Add Chemical-496	purging port	has_property
+Add Chemical-496-purging port	None	has_value
+Add Chemical-496	priming volume	has_property
+Add Chemical-496-priming volume	None	has_value
+Add Chemical-496	priming waste container	has_property
+Add Chemical-496-priming waste container	None	has_value
+Chemical-ZrOCl28 H2O-558	container	has_property
+Chemical-ZrOCl28 H2O-558-container	ZrOCl2_Container	has_value
+Chemical-ZrOCl28 H2O-558	lookup missing values	has_property
+Chemical-ZrOCl28 H2O-558-lookup missing values	True	has_value
+Chemical-ZrOCl28 H2O-558	name	has_property
+Chemical-ZrOCl28 H2O-558-name	ZrOCl28 H2O	has_value
+Chemical-ZrOCl28 H2O-558	lot number	has_property
+Chemical-ZrOCl28 H2O-558-lot number		has_value
+Chemical-ZrOCl28 H2O-558	supplier	has_property
+Chemical-ZrOCl28 H2O-558-supplier		has_value
+Chemical-ZrOCl28 H2O-558	cas	has_property
+Chemical-ZrOCl28 H2O-558-cas		has_value
+Chemical-ZrOCl28 H2O-558	smiles	has_property
+Chemical-ZrOCl28 H2O-558-smiles		has_value
+Chemical-ZrOCl28 H2O-558	density	has_property
+Chemical-ZrOCl28 H2O-558-density	None	has_value
+Chemical-ZrOCl28 H2O-558	molar mass	has_property
+Chemical-ZrOCl28 H2O-558-molar mass	None	has_value
+Chemical-ZrOCl28 H2O-558	mass	has_property
+Chemical-ZrOCl28 H2O-558-mass	0.028 g	has_value
+Chemical-ZrOCl28 H2O-558	molar amount	has_property
+Chemical-ZrOCl28 H2O-558-molar amount	0.086 mmol	has_value
+Chemical-ZrOCl28 H2O-558	concentration	has_property
+Chemical-ZrOCl28 H2O-558-concentration	None	has_value
+Chemical-ZrOCl28 H2O-558	mass concentration	has_property
+Chemical-ZrOCl28 H2O-558-mass concentration	10 mg/mL	has_value
+Chemical-ZrOCl28 H2O-558	volume	has_property
+Chemical-ZrOCl28 H2O-558-volume	None	has_value
+Chemical-ZrOCl28 H2O-558	is stock solution	has_property
+Chemical-ZrOCl28 H2O-558-is stock solution	False	has_value
+Add Chemical-624	container	has_property
+Add Chemical-624-container	Reaction_Flask_50_mL	has_value
+Add Chemical-624	chemical	has_property
+Add Chemical-624-chemical	DMF	has_value
+Add Chemical-624	withdraw rate	has_property
+Add Chemical-624-withdraw rate	None	has_value
+Add Chemical-624	addition rate	has_property
+Add Chemical-624-addition rate	None	has_value
+Add Chemical-624	robot arm	has_property
+Add Chemical-624-robot arm	None	has_value
+Add Chemical-624	capper decapper	has_property
+Add Chemical-624-capper decapper	None	has_value
+Add Chemical-624	return container after addition	has_property
+Add Chemical-624-return container after addition	False	has_value
+Add Chemical-624	return chemicals after addition	has_property
+Add Chemical-624-return chemicals after addition	True	has_value
+Add Chemical-624	bottom clearance	has_property
+Add Chemical-624-bottom clearance	None	has_value
+Add Chemical-624	purging volume	has_property
+Add Chemical-624-purging volume	30mL	has_value
+Add Chemical-624	purging addition rate	has_property
+Add Chemical-624-purging addition rate	None	has_value
+Add Chemical-624	purging port	has_property
+Add Chemical-624-purging port	None	has_value
+Add Chemical-624	priming volume	has_property
+Add Chemical-624-priming volume	None	has_value
+Add Chemical-624	priming waste container	has_property
+Add Chemical-624-priming waste container	None	has_value
+Chemical-DMF-686	container	has_property
+Chemical-DMF-686-container	DMF_Container_Falcon_Tube	has_value
+Chemical-DMF-686	lookup missing values	has_property
+Chemical-DMF-686-lookup missing values	True	has_value
+Chemical-DMF-686	name	has_property
+Chemical-DMF-686-name	DMF	has_value
+Chemical-DMF-686	lot number	has_property
+Chemical-DMF-686-lot number		has_value
+Chemical-DMF-686	supplier	has_property
+Chemical-DMF-686-supplier		has_value
+Chemical-DMF-686	cas	has_property
+Chemical-DMF-686-cas		has_value
+Chemical-DMF-686	smiles	has_property
+Chemical-DMF-686-smiles		has_value
+Chemical-DMF-686	density	has_property
+Chemical-DMF-686-density	None	has_value
+Chemical-DMF-686	molar mass	has_property
+Chemical-DMF-686-molar mass	None	has_value
+Chemical-DMF-686	mass	has_property
+Chemical-DMF-686-mass	None	has_value
+Chemical-DMF-686	molar amount	has_property
+Chemical-DMF-686-molar amount	None	has_value
+Chemical-DMF-686	concentration	has_property
+Chemical-DMF-686-concentration	None	has_value
+Chemical-DMF-686	mass concentration	has_property
+Chemical-DMF-686-mass concentration	None	has_value
+Chemical-DMF-686	volume	has_property
+Chemical-DMF-686-volume	5.0 mL	has_value
+Chemical-DMF-686	is stock solution	has_property
+Chemical-DMF-686-is stock solution	False	has_value
+Heat-752	container	has_property
+Heat-752-container	Reaction_Flask_50_mL	has_value
+Heat-752	heating temperature	has_property
+Heat-752-heating temperature	25.0 C	has_value
+Heat-752	stirring speed	has_property
+Heat-752-stirring speed	400.0 rpm	has_value
+Heat-752	heating time	has_property
+Heat-752-heating time	5.0 min	has_value
+Heat-752	temperature stabilization time	has_property
+Heat-752-temperature stabilization time	5min	has_value
+Heat-752	maximum temperature deviation	has_property
+Heat-752-maximum temperature deviation	2C	has_value
+Heat-752	cooldown temperature	has_property
+Heat-752-cooldown temperature	40C	has_value
+Heat-752	active cooling	has_property
+Heat-752-active cooling	True	has_value
+Heat-752	temperature sensor	has_property
+Heat-752-temperature sensor	EXTERNAL	has_value
+Heat-752	robot arm	has_property
+Heat-752-robot arm	None	has_value
+Sonicate-798	container	has_property
+Sonicate-798-container	Reaction_Flask_50_mL	has_value
+Sonicate-798	sonicator	has_property
+Sonicate-798-sonicator	None	has_value
+Sonicate-798	sonication time	has_property
+Sonicate-798-sonication time	10.0 min	has_value
+Sonicate-798	sonication power	has_property
+Sonicate-798-sonication power	50.0	has_value
+Sonicate-798	sonication amplitude	has_property
+Sonicate-798-sonication amplitude	50.0	has_value
+Sonicate-798	sonication temperature	has_property
+Sonicate-798-sonication temperature	20C	has_value
+Sonicate-798	bottom clearance	has_property
+Sonicate-798-bottom clearance	None	has_value
+Sonicate-798	container for cleaning	has_property
+Sonicate-798-container for cleaning	None	has_value
+Sonicate-798	robot arm	has_property
+Sonicate-798-robot arm	None	has_value
+Sonicate-798	capper decapper	has_property
+Sonicate-798-capper decapper	None	has_value
+Add Chemical-844	container	has_property
+Add Chemical-844-container	Reaction_Flask_50_mL	has_value
+Add Chemical-844	chemical	has_property
+Add Chemical-844-chemical	acetic acid;4,4'-(anthracene-9,10-diyl)dibenzoic acid	has_value
+Add Chemical-844	withdraw rate	has_property
+Add Chemical-844-withdraw rate	None	has_value
+Add Chemical-844	addition rate	has_property
+Add Chemical-844-addition rate	None	has_value
+Add Chemical-844	robot arm	has_property
+Add Chemical-844-robot arm	None	has_value
+Add Chemical-844	capper decapper	has_property
+Add Chemical-844-capper decapper	None	has_value
+Add Chemical-844	return container after addition	has_property
+Add Chemical-844-return container after addition	False	has_value
+Add Chemical-844	return chemicals after addition	has_property
+Add Chemical-844-return chemicals after addition	True	has_value
+Add Chemical-844	bottom clearance	has_property
+Add Chemical-844-bottom clearance	None	has_value
+Add Chemical-844	purging volume	has_property
+Add Chemical-844-purging volume	30mL	has_value
+Add Chemical-844	purging addition rate	has_property
+Add Chemical-844-purging addition rate	None	has_value
+Add Chemical-844	purging port	has_property
+Add Chemical-844-purging port	None	has_value
+Add Chemical-844	priming volume	has_property
+Add Chemical-844-priming volume	None	has_value
+Add Chemical-844	priming waste container	has_property
+Add Chemical-844-priming waste container	None	has_value
+Chemical-acetic acid-906	container	has_property
+Chemical-acetic acid-906-container	Acetic_Acid_Container	has_value
+Chemical-acetic acid-906	lookup missing values	has_property
+Chemical-acetic acid-906-lookup missing values	True	has_value
+Chemical-acetic acid-906	name	has_property
+Chemical-acetic acid-906-name	acetic acid	has_value
+Chemical-acetic acid-906	lot number	has_property
+Chemical-acetic acid-906-lot number		has_value
+Chemical-acetic acid-906	supplier	has_property
+Chemical-acetic acid-906-supplier		has_value
+Chemical-acetic acid-906	cas	has_property
+Chemical-acetic acid-906-cas		has_value
+Chemical-acetic acid-906	smiles	has_property
+Chemical-acetic acid-906-smiles		has_value
+Chemical-acetic acid-906	density	has_property
+Chemical-acetic acid-906-density	None	has_value
+Chemical-acetic acid-906	molar mass	has_property
+Chemical-acetic acid-906-molar mass	None	has_value
+Chemical-acetic acid-906	mass	has_property
+Chemical-acetic acid-906-mass	None	has_value
+Chemical-acetic acid-906	molar amount	has_property
+Chemical-acetic acid-906-molar amount	17.0 mmol	has_value
+Chemical-acetic acid-906	concentration	has_property
+Chemical-acetic acid-906-concentration	None	has_value
+Chemical-acetic acid-906	mass concentration	has_property
+Chemical-acetic acid-906-mass concentration	None	has_value
+Chemical-acetic acid-906	volume	has_property
+Chemical-acetic acid-906-volume	980.0 uL	has_value
+Chemical-acetic acid-906	is stock solution	has_property
+Chemical-acetic acid-906-is stock solution	False	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	container	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-container	DAP_Container	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	lookup missing values	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-lookup missing values	True	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	name	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-name	4,4'-(anthracene-9,10-diyl)dibenzoic acid	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	lot number	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-lot number		has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	supplier	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-supplier		has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	cas	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-cas		has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	smiles	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-smiles		has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	density	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-density	None	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	molar mass	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-molar mass	None	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	mass	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-mass	0.036 g	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	molar amount	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-molar amount	0.086 mmol	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	concentration	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-concentration	None	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	mass concentration	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-mass concentration	10 mg/mL	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	volume	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-volume	None	has_value
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	is stock solution	has_property
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972-is stock solution	False	has_value
+Heat-1038	container	has_property
+Heat-1038-container	Reaction_Flask_50_mL	has_value
+Heat-1038	heating temperature	has_property
+Heat-1038-heating temperature	120.0 C	has_value
+Heat-1038	stirring speed	has_property
+Heat-1038-stirring speed	300.0 rpm	has_value
+Heat-1038	heating time	has_property
+Heat-1038-heating time	24.0 h	has_value
+Heat-1038	temperature stabilization time	has_property
+Heat-1038-temperature stabilization time	5min	has_value
+Heat-1038	maximum temperature deviation	has_property
+Heat-1038-maximum temperature deviation	2C	has_value
+Heat-1038	cooldown temperature	has_property
+Heat-1038-cooldown temperature	40C	has_value
+Heat-1038	active cooling	has_property
+Heat-1038-active cooling	True	has_value
+Heat-1038	temperature sensor	has_property
+Heat-1038-temperature sensor	EXTERNAL	has_value
+Heat-1038	robot arm	has_property
+Heat-1038-robot arm	None	has_value
+Heat-1084	container	has_property
+Heat-1084-container	Reaction_Flask_50_mL	has_value
+Heat-1084	heating temperature	has_property
+Heat-1084-heating temperature	25.0 C	has_value
+Heat-1084	stirring speed	has_property
+Heat-1084-stirring speed	300.0 rpm	has_value
+Heat-1084	heating time	has_property
+Heat-1084-heating time	5.0 min	has_value
+Heat-1084	temperature stabilization time	has_property
+Heat-1084-temperature stabilization time	5min	has_value
+Heat-1084	maximum temperature deviation	has_property
+Heat-1084-maximum temperature deviation	2C	has_value
+Heat-1084	cooldown temperature	has_property
+Heat-1084-cooldown temperature	40C	has_value
+Heat-1084	active cooling	has_property
+Heat-1084-active cooling	True	has_value
+Heat-1084	temperature sensor	has_property
+Heat-1084-temperature sensor	EXTERNAL	has_value
+Heat-1084	robot arm	has_property
+Heat-1084-robot arm	None	has_value
+Centrifuge-1130	container	has_property
+Centrifuge-1130-container	Reaction_Flask_50_mL	has_value
+Centrifuge-1130	containers	has_property
+Centrifuge-1130-containers	Centrifuge_Tube_50mL;Centrifuge_Tube_50mL_Counterweight	has_value
+Centrifuge-1130	centrifugation speed	has_property
+Centrifuge-1130-centrifugation speed	8000.0 rpm	has_value
+Centrifuge-1130	centrifugation time	has_property
+Centrifuge-1130-centrifugation time	15.0 min	has_value
+Centrifuge-1130	centrifugation temperature	has_property
+Centrifuge-1130-centrifugation temperature	25.0 C	has_value
+Centrifuge-1130	bottom clearance withdrawing	has_property
+Centrifuge-1130-bottom clearance withdrawing	3	has_value
+Centrifuge-1130	dropoff location	has_property
+Centrifuge-1130-dropoff location	None	has_value
+Centrifuge-1130	robot arm	has_property
+Centrifuge-1130-robot arm	None	has_value
+Centrifuge-1130	centrifuge	has_property
+Centrifuge-1130-centrifuge	None	has_value
+Centrifuge-1130	transfer hardware	has_property
+Centrifuge-1130-transfer hardware	None	has_value
+Centrifuge-1130	capper decapper	has_property
+Centrifuge-1130-capper decapper	None	has_value
+Remove Supernatant And Redisperse-1180	container	has_property
+Remove Supernatant And Redisperse-1180-container	Centrifuge_Tube_50mL	has_value
+Remove Supernatant And Redisperse-1180	waste container	has_property
+Remove Supernatant And Redisperse-1180-waste container	waste_container_valve1	has_value
+Remove Supernatant And Redisperse-1180	redispersion chemical	has_property
+Remove Supernatant And Redisperse-1180-redispersion chemical	DMF	has_value
+Remove Supernatant And Redisperse-1180	sonicator	has_property
+Remove Supernatant And Redisperse-1180-sonicator	None	has_value
+Remove Supernatant And Redisperse-1180	sonication time	has_property
+Remove Supernatant And Redisperse-1180-sonication time	10min	has_value
+Remove Supernatant And Redisperse-1180	sonication power	has_property
+Remove Supernatant And Redisperse-1180-sonication power	50.0	has_value
+Remove Supernatant And Redisperse-1180	sonication amplitude	has_property
+Remove Supernatant And Redisperse-1180-sonication amplitude	50.0	has_value
+Remove Supernatant And Redisperse-1180	sonication temperature	has_property
+Remove Supernatant And Redisperse-1180-sonication temperature	20C	has_value
+Remove Supernatant And Redisperse-1180	container for cleaning	has_property
+Remove Supernatant And Redisperse-1180-container for cleaning	None	has_value
+Remove Supernatant And Redisperse-1180	robot arm	has_property
+Remove Supernatant And Redisperse-1180-robot arm	None	has_value
+Remove Supernatant And Redisperse-1180	capper decapper	has_property
+Remove Supernatant And Redisperse-1180-capper decapper	None	has_value
+Remove Supernatant And Redisperse-1180	purging volume	has_property
+Remove Supernatant And Redisperse-1180-purging volume	30mL	has_value
+Remove Supernatant And Redisperse-1180	bottom clearance withdrawing	has_property
+Remove Supernatant And Redisperse-1180-bottom clearance withdrawing	None	has_value
+Remove Supernatant And Redisperse-1180	bottom clearance dispensing	has_property
+Remove Supernatant And Redisperse-1180-bottom clearance dispensing	None	has_value
+Remove Supernatant And Redisperse-1180	bottom clearance sonication	has_property
+Remove Supernatant And Redisperse-1180-bottom clearance sonication	None	has_value
+Chemical-DMF-1246	container	has_property
+Chemical-DMF-1246-container	DMF_Container	has_value
+Chemical-DMF-1246	lookup missing values	has_property
+Chemical-DMF-1246-lookup missing values	True	has_value
+Chemical-DMF-1246	name	has_property
+Chemical-DMF-1246-name	DMF	has_value
+Chemical-DMF-1246	lot number	has_property
+Chemical-DMF-1246-lot number		has_value
+Chemical-DMF-1246	supplier	has_property
+Chemical-DMF-1246-supplier		has_value
+Chemical-DMF-1246	cas	has_property
+Chemical-DMF-1246-cas		has_value
+Chemical-DMF-1246	smiles	has_property
+Chemical-DMF-1246-smiles		has_value
+Chemical-DMF-1246	density	has_property
+Chemical-DMF-1246-density	None	has_value
+Chemical-DMF-1246	molar mass	has_property
+Chemical-DMF-1246-molar mass	None	has_value
+Chemical-DMF-1246	mass	has_property
+Chemical-DMF-1246-mass	None	has_value
+Chemical-DMF-1246	molar amount	has_property
+Chemical-DMF-1246-molar amount	None	has_value
+Chemical-DMF-1246	concentration	has_property
+Chemical-DMF-1246-concentration	None	has_value
+Chemical-DMF-1246	mass concentration	has_property
+Chemical-DMF-1246-mass concentration	None	has_value
+Chemical-DMF-1246	volume	has_property
+Chemical-DMF-1246-volume	30.0 mL	has_value
+Chemical-DMF-1246	is stock solution	has_property
+Chemical-DMF-1246-is stock solution	False	has_value
+Container-ZrOCl2_Container	current hardware	has_property
+Container-ZrOCl2_Container-current hardware	ot2_holder_15ml	has_value
+Container-ZrOCl2_Container	deck position	has_property
+Container-ZrOCl2_Container-deck position	0	has_value
+Container-ZrOCl2_Container	slot number	has_property
+Container-ZrOCl2_Container-slot number	1	has_value
+Container-ZrOCl2_Container	name	has_property
+Container-ZrOCl2_Container-name	ZrOCl2_Container	has_value
+Container-ZrOCl2_Container	current volume	has_property
+Container-ZrOCl2_Container-current volume	15 mL	has_value
+Container-ZrOCl2_Container	max volume	has_property
+Container-ZrOCl2_Container-max volume	None	has_value
+Container-ZrOCl2_Container	container type	has_property
+Container-ZrOCl2_Container-container type	FALCON_TUBE_15_ML	has_value
+Container-ZrOCl2_Container	has stirbar	has_property
+Container-ZrOCl2_Container-has stirbar	False	has_value
+Container-ZrOCl2_Container	is capped	has_property
+Container-ZrOCl2_Container-is capped	False	has_value
+Container-DMF_Container_Falcon_Tube	current hardware	has_property
+Container-DMF_Container_Falcon_Tube-current hardware	ot2_holder_15ml	has_value
+Container-DMF_Container_Falcon_Tube	deck position	has_property
+Container-DMF_Container_Falcon_Tube-deck position	0	has_value
+Container-DMF_Container_Falcon_Tube	slot number	has_property
+Container-DMF_Container_Falcon_Tube-slot number	2	has_value
+Container-DMF_Container_Falcon_Tube	name	has_property
+Container-DMF_Container_Falcon_Tube-name	DMF_Container_Falcon_Tube	has_value
+Container-DMF_Container_Falcon_Tube	current volume	has_property
+Container-DMF_Container_Falcon_Tube-current volume	15 mL	has_value
+Container-DMF_Container_Falcon_Tube	max volume	has_property
+Container-DMF_Container_Falcon_Tube-max volume	None	has_value
+Container-DMF_Container_Falcon_Tube	container type	has_property
+Container-DMF_Container_Falcon_Tube-container type	FALCON_TUBE_15_ML	has_value
+Container-DMF_Container_Falcon_Tube	has stirbar	has_property
+Container-DMF_Container_Falcon_Tube-has stirbar	False	has_value
+Container-DMF_Container_Falcon_Tube	is capped	has_property
+Container-DMF_Container_Falcon_Tube-is capped	False	has_value
+Container-Acetic_Acid_Container	current hardware	has_property
+Container-Acetic_Acid_Container-current hardware	ot2_holder_15ml	has_value
+Container-Acetic_Acid_Container	deck position	has_property
+Container-Acetic_Acid_Container-deck position	0	has_value
+Container-Acetic_Acid_Container	slot number	has_property
+Container-Acetic_Acid_Container-slot number	3	has_value
+Container-Acetic_Acid_Container	name	has_property
+Container-Acetic_Acid_Container-name	Acetic_Acid_Container	has_value
+Container-Acetic_Acid_Container	current volume	has_property
+Container-Acetic_Acid_Container-current volume	15 mL	has_value
+Container-Acetic_Acid_Container	max volume	has_property
+Container-Acetic_Acid_Container-max volume	None	has_value
+Container-Acetic_Acid_Container	container type	has_property
+Container-Acetic_Acid_Container-container type	FALCON_TUBE_15_ML	has_value
+Container-Acetic_Acid_Container	has stirbar	has_property
+Container-Acetic_Acid_Container-has stirbar	False	has_value
+Container-Acetic_Acid_Container	is capped	has_property
+Container-Acetic_Acid_Container-is capped	False	has_value
+Container-DAP_Container	current hardware	has_property
+Container-DAP_Container-current hardware	ot2_holder_15ml	has_value
+Container-DAP_Container	deck position	has_property
+Container-DAP_Container-deck position	0	has_value
+Container-DAP_Container	slot number	has_property
+Container-DAP_Container-slot number	4	has_value
+Container-DAP_Container	name	has_property
+Container-DAP_Container-name	DAP_Container	has_value
+Container-DAP_Container	current volume	has_property
+Container-DAP_Container-current volume	15 mL	has_value
+Container-DAP_Container	max volume	has_property
+Container-DAP_Container-max volume	None	has_value
+Container-DAP_Container	container type	has_property
+Container-DAP_Container-container type	FALCON_TUBE_15_ML	has_value
+Container-DAP_Container	has stirbar	has_property
+Container-DAP_Container-has stirbar	False	has_value
+Container-DAP_Container	is capped	has_property
+Container-DAP_Container-is capped	False	has_value
+Container-DMF_Container	current hardware	has_property
+Container-DMF_Container-current hardware	valve1	has_value
+Container-DMF_Container	deck position	has_property
+Container-DMF_Container-deck position	0	has_value
+Container-DMF_Container	slot number	has_property
+Container-DMF_Container-slot number	8	has_value
+Container-DMF_Container	name	has_property
+Container-DMF_Container-name	DMF_Container	has_value
+Container-DMF_Container	current volume	has_property
+Container-DMF_Container-current volume	500 mL	has_value
+Container-DMF_Container	max volume	has_property
+Container-DMF_Container-max volume	500 mL	has_value
+Container-DMF_Container	container type	has_property
+Container-DMF_Container-container type	None	has_value
+Container-DMF_Container	has stirbar	has_property
+Container-DMF_Container-has stirbar	False	has_value
+Container-DMF_Container	is capped	has_property
+Container-DMF_Container-is capped	False	has_value
+Container-Centrifuge_Tube_50mL	current hardware	has_property
+Container-Centrifuge_Tube_50mL-current hardware	falcon_tube_holder_50mL	has_value
+Container-Centrifuge_Tube_50mL	deck position	has_property
+Container-Centrifuge_Tube_50mL-deck position	0	has_value
+Container-Centrifuge_Tube_50mL	slot number	has_property
+Container-Centrifuge_Tube_50mL-slot number	1	has_value
+Container-Centrifuge_Tube_50mL	name	has_property
+Container-Centrifuge_Tube_50mL-name	Centrifuge_Tube_50mL	has_value
+Container-Centrifuge_Tube_50mL	current volume	has_property
+Container-Centrifuge_Tube_50mL-current volume	None	has_value
+Container-Centrifuge_Tube_50mL	max volume	has_property
+Container-Centrifuge_Tube_50mL-max volume	None	has_value
+Container-Centrifuge_Tube_50mL	container type	has_property
+Container-Centrifuge_Tube_50mL-container type	FALCON_TUBE_50_ML	has_value
+Container-Centrifuge_Tube_50mL	has stirbar	has_property
+Container-Centrifuge_Tube_50mL-has stirbar	False	has_value
+Container-Centrifuge_Tube_50mL	is capped	has_property
+Container-Centrifuge_Tube_50mL-is capped	True	has_value
+Container-Centrifuge_Tube_50mL_Counterweight	current hardware	has_property
+Container-Centrifuge_Tube_50mL_Counterweight-current hardware	falcon_tube_holder_50mL	has_value
+Container-Centrifuge_Tube_50mL_Counterweight	deck position	has_property
+Container-Centrifuge_Tube_50mL_Counterweight-deck position	0	has_value
+Container-Centrifuge_Tube_50mL_Counterweight	slot number	has_property
+Container-Centrifuge_Tube_50mL_Counterweight-slot number	1	has_value
+Container-Centrifuge_Tube_50mL_Counterweight	name	has_property
+Container-Centrifuge_Tube_50mL_Counterweight-name	Centrifuge_Tube_50mL_Counterweight	has_value
+Container-Centrifuge_Tube_50mL_Counterweight	current volume	has_property
+Container-Centrifuge_Tube_50mL_Counterweight-current volume	None	has_value
+Container-Centrifuge_Tube_50mL_Counterweight	max volume	has_property
+Container-Centrifuge_Tube_50mL_Counterweight-max volume	None	has_value
+Container-Centrifuge_Tube_50mL_Counterweight	container type	has_property
+Container-Centrifuge_Tube_50mL_Counterweight-container type	FALCON_TUBE_50_ML	has_value
+Container-Centrifuge_Tube_50mL_Counterweight	has stirbar	has_property
+Container-Centrifuge_Tube_50mL_Counterweight-has stirbar	False	has_value
+Container-Centrifuge_Tube_50mL_Counterweight	is capped	has_property
+Container-Centrifuge_Tube_50mL_Counterweight-is capped	True	has_value
+Container-waste_container_valve1	current hardware	has_property
+Container-waste_container_valve1-current hardware	valve1	has_value
+Container-waste_container_valve1	deck position	has_property
+Container-waste_container_valve1-deck position	0	has_value
+Container-waste_container_valve1	slot number	has_property
+Container-waste_container_valve1-slot number	0	has_value
+Container-waste_container_valve1	name	has_property
+Container-waste_container_valve1-name	waste_container_valve1	has_value
+Container-waste_container_valve1	current volume	has_property
+Container-waste_container_valve1-current volume	None	has_value
+Container-waste_container_valve1	max volume	has_property
+Container-waste_container_valve1-max volume	None	has_value
+Container-waste_container_valve1	container type	has_property
+Container-waste_container_valve1-container type	None	has_value
+Container-waste_container_valve1	has stirbar	has_property
+Container-waste_container_valve1-has stirbar	False	has_value
+Container-waste_container_valve1	is capped	has_property
+Container-waste_container_valve1-is capped	False	has_value
+Container-Reaction_Flask_50_mL	Add Chemical-496	is_used_by
+Add Chemical-496	Container-Reaction_Flask_50_mL	uses_material_from
+Chemical-ZrOCl28 H2O-558	Add Chemical-496	is_used_by
+Add Chemical-496	Chemical-ZrOCl28 H2O-558	uses_material_from
+Add Chemical-496	Add Chemical-624	is_used_by
+Add Chemical-624	Add Chemical-496	uses_material_from
+Chemical-DMF-686	Add Chemical-624	is_used_by
+Add Chemical-624	Chemical-DMF-686	uses_material_from
+Add Chemical-624	Heat-752	is_used_by
+Heat-752	Add Chemical-624	uses_material_from
+Heat-752	Sonicate-798	is_used_by
+Sonicate-798	Heat-752	uses_material_from
+Sonicate-798	Add Chemical-844	is_used_by
+Add Chemical-844	Sonicate-798	uses_material_from
+Chemical-acetic acid-906	Add Chemical-844	is_used_by
+Add Chemical-844	Chemical-acetic acid-906	uses_material_from
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	Add Chemical-844	is_used_by
+Add Chemical-844	Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	uses_material_from
+Add Chemical-844	Heat-1038	is_used_by
+Heat-1038	Add Chemical-844	uses_material_from
+Heat-1038	Heat-1084	is_used_by
+Heat-1084	Heat-1038	uses_material_from
+Heat-1084	Centrifuge-1130	is_used_by
+Centrifuge-1130	Heat-1084	uses_material_from
+Chemical-DMF-1246	Remove Supernatant And Redisperse-1180	is_used_by
+Remove Supernatant And Redisperse-1180	Chemical-DMF-1246	uses_material_from
+Container-ZrOCl2_Container	Chemical-ZrOCl28 H2O-558	contains_chemical
+Chemical-ZrOCl28 H2O-558	Container-ZrOCl2_Container	is_contained_in
+Container-DMF_Container_Falcon_Tube	Chemical-DMF-686	contains_chemical
+Chemical-DMF-686	Container-DMF_Container_Falcon_Tube	is_contained_in
+Container-Acetic_Acid_Container	Chemical-acetic acid-906	contains_chemical
+Chemical-acetic acid-906	Container-Acetic_Acid_Container	is_contained_in
+Container-DAP_Container	Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	contains_chemical
+Chemical-4,4'-(anthracene-9,10-diyl)dibenzoic acid-972	Container-DAP_Container	is_contained_in
+Container-DMF_Container	Chemical-DMF-1246	contains_chemical
+Chemical-DMF-1246	Container-DMF_Container	is_contained_in
+Container-Centrifuge_Tube_50mL	Centrifuge-1130	is_used_by
+Centrifuge-1130	Container-Centrifuge_Tube_50mL	uses_material_from
+Container-Centrifuge_Tube_50mL_Counterweight	Centrifuge-1130	is_used_by
+Centrifuge-1130	Container-Centrifuge_Tube_50mL_Counterweight	uses_material_from
+Centrifuge-1130	Remove Supernatant And Redisperse-1180	is_used_by
+Remove Supernatant And Redisperse-1180	Centrifuge-1130	uses_material_from
+Container-waste_container_valve1	Remove Supernatant And Redisperse-1180	is_used_by
+Remove Supernatant And Redisperse-1180	Container-waste_container_valve1	uses_material_from
+centrifugation_speed	Quantity	is_a
+molar_mass	str	is_a
+volume	str	is_a
+priming_volume	float	is_a
+heating_time	Quantity	is_a
+is_stock_solution	bool	is_a
+sonication_time	str	is_a
+dropoff_location	Hardware	is_a
+centrifugation_temperature	str	is_a
+centrifugation_speed	float	is_a
+withdraw_rate	FlowRate	is_a
+value	float	is_a
+heating_temperature	Quantity	is_a
+volume	Volume	is_a
+active_cooling	bool	is_a
+sonication_temperature	Temperature	is_a
+return_chemicals_after_addition	bool	is_a
+container_type	tuple	is_a
+purging_port	int	is_a
+capper_decapper	Hardware	is_a
+bottom_clearance_withdrawing	float	is_a
+maximum_temperature_deviation	Quantity	is_a
+transfer_hardware	AdditionHardware	is_a
+heating_temperature	float	is_a
+addition_rate	str	is_a
+temperature_stabilization_time	Quantity	is_a
+withdraw_rate	float	is_a
+cooldown_temperature	str	is_a
+sonication_power	float	is_a
+bottom_clearance_withdrawing	int	is_a
+maximum_temperature_deviation	float	is_a
+centrifugation_time	Quantity	is_a
+temperature_stabilization_time	float	is_a
+deck_position	int	is_a
+dropoff_location	int	is_a
+smiles	str	is_a
+density	str	is_a
+lot_number	str	is_a
+sonication_temperature	Quantity	is_a
+withdraw_rate	str	is_a
+container_type	ContainerDescription	is_a
+lookup_missing_values	bool	is_a
+purging_addition_rate	FlowRate	is_a
+concentration	Concentration	is_a
+cooldown_temperature	Temperature	is_a
+heating_time	Time	is_a
+sonication_time	Quantity	is_a
+molar_mass	MolarMass	is_a
+mass	str	is_a
+max_volume	str	is_a
+sonication_temperature	float	is_a
+waste_container	Container	is_a
+hardware_type	HardwareTypeDefinitions	is_a
+purging_volume	Quantity	is_a
+transfer_hardware	Hardware	is_a
+heating_time	float	is_a
+sonicator	SonicatorHardware	is_a
+stirring_speed	str	is_a
+is_currently_active	Event	is_a
+purging_addition_rate	Quantity	is_a
+supplier	str	is_a
+robot_arm	RobotArmHardware	is_a
+sonicator	Hardware	is_a
+is_stock_solution	int	is_a
+priming_volume	str	is_a
+purging_volume	float	is_a
+mass_concentration	Quantity	is_a
+lookup_missing_values	int	is_a
+hardware_type	Enum	is_a
+concentration	str	is_a
+max_volume	Volume	is_a
+current_volume	Quantity	is_a
+molar_amount	str	is_a
+centrifugation_speed	str	is_a
+bottom_clearance_dispensing	float	is_a
+centrifugation_temperature	Temperature	is_a
+container_for_cleaning	Container	is_a
+heating_time	str	is_a
+active_cooling	int	is_a
+addition_rate	Quantity	is_a
+temperature_stabilization_time	Time	is_a
+return_chemicals_after_addition	int	is_a
+priming_volume	Volume	is_a
+priming_waste_container	Container	is_a
+is_capped	bool	is_a
+bottom_clearance_dispensing	int	is_a
+molar_amount	MolarAmount	is_a
+density	Density	is_a
+sonication_amplitude	float	is_a
+centrifugation_time	Time	is_a
+mass_concentration	MassConcentration	is_a
+bottom_clearance_sonication	int	is_a
+heating_temperature	str	is_a
+centrifugation_time	float	is_a
+unit	str	is_a
+molar_mass	Quantity	is_a
+current_hardware	Hardware	is_a
+volume	Quantity	is_a
+maximum_temperature_deviation	str	is_a
+purging_volume	Volume	is_a
+cas	str	is_a
+has_stirbar	bool	is_a
+temperature_stabilization_time	str	is_a
+centrifugation_temperature	Quantity	is_a
+sonication_time	Time	is_a
+redispersion_chemical	Chemical	is_a
+name	str	is_a
+sonication_time	float	is_a
+centrifugation_time	str	is_a
+centrifuge	Hardware	is_a
+heating_temperature	Temperature	is_a
+centrifuge	CentrifugeHardware	is_a
+addition_rate	FlowRate	is_a
+purging_addition_rate	float	is_a
+container	Container	is_a
+sonication_temperature	str	is_a
+maximum_temperature_deviation	Temperature	is_a
+containers	Ellipsis	is_a
+bottom_clearance_sonication	float	is_a
+cooldown_temperature	Quantity	is_a
+bottom_clearance	float	is_a
+mass	Mass	is_a
+robot_arm	Hardware	is_a
+containers	Container	is_a
+purging_volume	str	is_a
+return_container_after_addition	bool	is_a
+dropoff_location	SampleHolderHardware	is_a
+addition_rate	float	is_a
+purging_addition_rate	str	is_a
+cooldown_temperature	float	is_a
+temperature_sensor	str	is_a
+density	Quantity	is_a
+mass_concentration	str	is_a
+stirring_speed	RotationSpeed	is_a
+is_capped	int	is_a
+withdraw_rate	Quantity	is_a
+current_volume	str	is_a
+return_container_after_addition	int	is_a
+molar_amount	Quantity	is_a
+mass	Quantity	is_a
+max_volume	Quantity	is_a
+stirring_speed	Quantity	is_a
+centrifugation_speed	RotationSpeed	is_a
+centrifugation_temperature	float	is_a
+current_volume	Volume	is_a
+chemical	Chemical	is_a
+priming_volume	Quantity	is_a
+has_stirbar	int	is_a
+concentration	Quantity	is_a
+stirring_speed	float	is_a
+slot_number	int	is_a
