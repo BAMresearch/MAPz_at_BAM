@@ -14,7 +14,7 @@ import random
 
 device_string = 'auto'
 instruction_head = 'Given a chemical synthesis procedure, summarize the procedure in structured output. Use exclusively these markup tags in the structured output, no other tags: <ADD>, <YIELD>, <DISSOLVE>, <STIR>, <WASH>, <DRY>, <CONCENTRATE>, <PURIFY>, <REMOVE>, <FILTER>, <HEAT>, <EXTRACT>, <COOL>, <SYNTHESIZE>, <WAIT>, <PARTITION>, <DEGASS>, <QUENCH>, <RECOVER>, <APPARATUSACTION>, <PRECIPITATE>, <MIX>, <ADJUSTPH>. Give only the output, no explanation. Here is an example:'
-example_procedure = 'In a flame-dried 100 mL round bottom flask, a mixture of 2.0 mL of furfurylamine (22 mmol) and 3 mL of triethylamine were stirred in 45 mL of dry dichloromethane under nitrogen at 0 °C. Then, 4.4 g of 1-adamantane carbonylchloride (22 mmol) in 5 mL of dry dichloromethane was added slowly, and the solution was allowed to warm to room temperature. After stirring for 1 h at room temperature, the solution was washed with 40 mL of an aqueous ammonium chloride solution (saturated) and 40 mL of an aqueous potassium carbonate solution (5%), the organic layer was separated, dried over MgSO4, filtered, and evaporated to dryness in vacuo. The crude product was recrystallized from heptane/EtOAc = 1:1 (v/v) to yield the product as off-white needles (3.15 g, 55%)'
+example_procedure = 'Procedure: In a flame-dried 100 mL round bottom flask, a mixture of 2.0 mL of furfurylamine (22 mmol) and 3 mL of triethylamine were stirred in 45 mL of dry dichloromethane under nitrogen at 0 °C. Then, 4.4 g of 1-adamantane carbonylchloride (22 mmol) in 5 mL of dry dichloromethane was added slowly, and the solution was allowed to warm to room temperature. After stirring for 1 h at room temperature, the solution was washed with 40 mL of an aqueous ammonium chloride solution (saturated) and 40 mL of an aqueous potassium carbonate solution (5%), the organic layer was separated, dried over MgSO4, filtered, and evaporated to dryness in vacuo. The crude product was recrystallized from heptane/EtOAc = 1:1 (v/v) to yield the product as off-white needles (3.15 g, 55%)'
 example_output = 'Output: <ADD> furfurylamine 2.0 mL 22 mmol triethylamine 3 mL dichloromethane 45 mL <COOL> 0 °C <MIX> 1-adamantane carbonylchloride 22 mmol 4.4 g dry dichloromethane 5 mL <ADD> slowly <HEAT> room temperature <STIR> 1 h <WASH> aqueous ammonium chloride solution (saturated) 40 mL aqueous potassium carbonate solution (5%) 40 mL <REMOVE> organic layer <DRY> MgSO4 <FILTER> <REMOVE> in vacuo <PURIFY> heptane/EtOAc = 1:1 (v/v) <YIELD> off-white needles 3.15 g 55 %'
 
 
@@ -22,41 +22,8 @@ def create_message(procedure):
     return [{"role": "user", "content": f'{instruction_head}\n{example_procedure}\n{example_output}\nProcedure: {procedure}\n'},]
 
 
-def cleanup_string(s):
-    return s.replace('\r', '').replace('\n', '').replace('°C.', '°C').replace('µ', 'u').replace('μ', 'u').replace('×', 'x').strip()
-
-
-def cleanup_datasets():
-    x = [cleanup_string(i) for i in open('in_raw.txt', encoding='utf-8') if i != '']
-    y = [cleanup_string(i) for i in open('out_chemtagger_raw.txt', encoding='utf-8')]
-
-    with open(f'in_cleaned.txt', 'a') as f:
-        for i in tqdm(x):
-            f.write(i + '\n')
-    
-    y_cleaned = []
-    for s in tqdm(y):
-        pos = 0
-        i = s
-        while pos > -1:
-            pos = i.find('<', pos)
-            cur_tag = i[pos:i.find('>', pos+1)+1]
-            pos2 = i.find('<', pos+1)
-            if pos2==-1:
-                break
-            next_tag = i[pos2:i.find('>', pos2+1)+1]
-            if next_tag == cur_tag:
-                i = i[:pos2] + i[pos2 + len(next_tag) + 1:]
-            else:
-                pos = pos2
-        y_cleaned.append(i)
-
-    with open(f'out_chemtagger_cleaned.txt', 'a') as f:
-        for i in y_cleaned:
-            f.write(i + '\n')
-
 def prepare_inference_data(start_percent, stop_percent):
-    x = [i for i in open('dataset_for_retagging.txt', encoding='utf-8') if i != '']
+    x = [i for i in open('in_cleaned.txt', encoding='utf-8') if i != '']
     x = x[int(start_percent*len(x)):int(stop_percent*len(x))]
     return [create_message(x[i]) for i in range(0, len(x))]
 
