@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "Ika_500mL_Heating_Block"
+    },
+    "metadata": {
+        "displayName": "Ika_500mL_Heating_Block",
+        "displayCategory": "heatingBlock",
+        "displayVolumeUnits": "mL",
+        "tags": ["FLASK_500_ML"]
+    },
+    "dimensions": {
+        "xDimension": 130,
+        "yDimension": 130,
+        "zDimension": 53,
+		"holeWidth": 106.5,
+		"spacingWidth": 0,
+		"columnsInOddRows": 1,
+		"columnsInEvenRows": 0,
+		"rows": 1,
+		"totalPlaces": 1
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 0,
+            "y0": 0,
+            "z0": 5
+        },
+        "spacings": {
+            "xs": 0.0,
+            "ys": 0.0,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

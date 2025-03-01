@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "3D Printed"
+    },
+    "metadata": {
+        "displayName": "Grip Change Holder Single 50mL Conical Tube",
+        "displayCategory": "tubeRack",
+        "displayVolumeUnits": "mL",
+        "tags": ["FALCON_TUBE_50_ML"]
+    },
+    "dimensions": {
+        "xDimension": 33.9,
+        "yDimension": 33.9,
+        "zDimension": 35.0,
+		"holeWidth": 28.9,
+		"spacingWidth": 0,
+		"columnsInOddRows": 1,
+		"columnsInEvenRows": 0,
+		"rows": 1,
+		"totalPlaces": 1
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 0,
+            "y0": 0,
+            "z0": 2.5
+	    },
+        "spacings": {
+            "xs": 0.0,
+            "ys": 0.0,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

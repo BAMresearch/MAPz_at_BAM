@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "Opentrons 4-in-1 Tube Rack Set"
+    },
+    "metadata": {
+        "displayName": "opentrons_6_tuberack_falcon_50ml_conical",
+        "displayCategory": "tubeRack",
+        "displayVolumeUnits": "mL",
+        "tags": ["opentrons_6_tuberack_falcon_50ml_conical", "FALCON_TUBE_50_ML"]
+    },
+    "dimensions": {
+        "xDimension": 127.76,
+        "yDimension": 85.48,
+        "zDimension": 78.0,
+		"holeWidth": 28,
+		"spacingWidth": 7,
+		"columnsInOddRows": 3,
+		"columnsInEvenRows": 3,
+		"rows": 2,
+		"totalPlaces": 6
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 35.5,
+            "y0": 25.24,
+            "z0": 7.0
+        },
+        "spacings": {
+            "xs": 35,
+            "ys": 35,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

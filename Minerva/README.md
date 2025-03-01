@@ -14,8 +14,12 @@ This repository contains files for the hardware and software used in the materia
 
 It also serves as the documentation, and gives several examples on how to use the software as well as more insights and implementation details for various features that are supported.
 
-| **Note:** The files in this repository are part of a publication that is currently under review. Once accepted for publication, they will be added here. In the meantime, only the documentation and examples are available to give an impression of the features and usage of the platform. | 
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+The files and images in this repository accompany the following publication:
+
+[M. Zaki, C. Prinz, B. Ruehle, **ACS Nano**, _A Self-Driving Lab for Nano- and Advanced Materials Synthesis_, 2025, DOI: 10.1021/acsnano.4c17504](https://doi.org/10.1021/acsnano.4c17504)
+
+If you find this work useful and use any of the files, data, or code in your own work, please cite the above article.
+
 
 ## Video Showcase
 A short video showing the MAP in action and featuring some exemplary synthesis, purification, and characterization steps can be found [here](Documentation/Videos/MINERVA_Showcase.mp4).
@@ -384,3 +388,10 @@ The Dictionary `is_ready` holds an Event for each hardware that indicates whethe
 #### Internal vs. External TaskGroupSynchronizationObjects
 
 If no _external_ tgso is passed to a method that is wrapped with the `TaskScheduler.scheduled_task` decorator (the `task_group_synchronization_object` parameter is set to `None` or not specified), it will automatically create its own _internal_ tgso for book keeping. It will then pass this tgso on to any method it calls during its execution as an _external_ tgso (meaning the called methods won't create their own tgso). While some of the hardware might still join (and be released!) in methods that obtain an _external_ tgso, the Container locks will only be acquired and released from the class with the _internal_ tgso. This was done since currently all "high level" methods are called on the `Container` class, so a container should only be released once all tasks/methods operating on this container have finished. At the end  (in a `finally` statement), when the method that created the _internal_ tgso exits, all hardware and container locks are released, and the tgso is marked as completed (`is_currently_active` is cleared, the `is_final_task` flag is set for all hardware, and all hardware that might still be in the waiting list is released). Of course, the user can also create their own tgso and pass it to a method. In that case, the tgso will be _external_ for all methods, and the user needs to take care of releasing hardware and container locks themselves.   
+
+## License
+The following licenses are used for the files in this project (see also the [license file](./LICENSE.txt) for details):
+- The **publication** describing the project was published in [ACS Nano](https://doi.org/10.1021/acsnano.4c17504) under the [CC-BY-4.0 license](https://creativecommons.org/licenses/by/4.0/).
+- All **python code** as well as the **configuration** and **example files** in this project are published under the [MIT license](https://opensource.org/license/mit).
+- The **documentation** and **videos** are published under the [CC-BY-NC-ND-4.0 license](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+- For now, the **.sdk files for 3D printing** and the **arduino code** for the custom built hardware are _Copyright (C) by the authors, all rights reserved_. We are currently working on another manuscript with detailed build and usage instructions for these. Once published, permissive licenses will be chosen here as well.

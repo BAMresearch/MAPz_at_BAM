@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "Labsolute Tip Rack 1000uL"
+    },
+    "metadata": {
+        "displayName": "labsolue_96_tiprack_1000ul",
+        "displayCategory": "tipRack",
+        "displayVolumeUnits": "uL",
+        "tags": ["labsolue_96_tiprack_1000ul"]
+    },
+    "dimensions": {
+        "xDimension": 127.87,
+        "yDimension": 85.0,
+        "zDimension": 92.5,
+		"holeWidth": 8.28,
+		"spacingWidth": 0.69,
+		"columnsInOddRows": 6,
+		"columnsInEvenRows": 6,
+		"rows": 8,
+		"totalPlaces": 96
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 15.84,
+            "y0": 12.30,
+            "z0": 0.0
+        },
+        "spacings": {
+            "xs": 9.0,
+            "ys": 9.0,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

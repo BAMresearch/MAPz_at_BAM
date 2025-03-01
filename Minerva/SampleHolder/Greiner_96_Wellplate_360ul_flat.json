@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "Greiner"
+    },
+    "metadata": {
+        "displayName": "greiner_96_wellplate_360ul_flat",
+        "displayCategory": "tubeRack",
+        "displayVolumeUnits": "uL",
+        "tags": ["greiner_96_wellplate_360ul_flat"]
+    },
+    "dimensions": {
+        "xDimension": 127.76,
+        "yDimension": 85.47,
+        "zDimension": 14.22,
+		"holeWidth": 6.86,
+		"spacingWidth": 10,
+		"columnsInOddRows": 12,
+		"columnsInEvenRows": 12,
+		"rows": 8,
+		"totalPlaces": 96
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 14.38,
+            "y0": 11.23,
+            "z0": 7.0
+        },
+        "spacings": {
+            "xs": 9,
+            "ys": 9,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

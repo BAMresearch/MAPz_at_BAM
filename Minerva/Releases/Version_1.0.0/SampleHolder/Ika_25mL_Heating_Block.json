@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "Ika_25mL_Heating_Block"
+    },
+    "metadata": {
+        "displayName": "Ika_25mL_Heating_Block",
+        "displayCategory": "heatingBlock",
+        "displayVolumeUnits": "mL",
+        "tags": ["FLASK_25_ML"]
+    },
+    "dimensions": {
+        "xDimension": 99.0,
+        "yDimension": 99.0,
+        "zDimension": 37.5,
+		"holeWidth": 43,
+		"spacingWidth": 0,
+		"columnsInOddRows": 1,
+		"columnsInEvenRows": 0,
+		"rows": 1,
+		"totalPlaces": 1
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 0,
+            "y0": 0,
+            "z0": 17
+        },
+        "spacings": {
+            "xs": 0.0,
+            "ys": 0.0,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

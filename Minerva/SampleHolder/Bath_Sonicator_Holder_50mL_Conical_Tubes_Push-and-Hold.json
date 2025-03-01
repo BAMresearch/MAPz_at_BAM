@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "3D Printed"
+    },
+    "metadata": {
+        "displayName": "Bath_Sonicator_Holder_50mL_Conical_Tubes_Push-and-Hold",
+        "displayCategory": "tubeRack",
+        "displayVolumeUnits": "mL",
+        "tags": ["FALCON_TUBE_50_ML"]
+    },
+    "dimensions": {
+        "xDimension": 160,
+        "yDimension": 40,
+        "zDimension": 50,
+		"holeWidth": 30,
+		"spacingWidth": 10,
+		"columnsInOddRows": 4,
+		"columnsInEvenRows": 0,
+		"rows": 1,
+		"totalPlaces": 4
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 20,
+            "y0": 20,
+            "z0": 0
+		},
+        "spacings": {
+            "xs": -40.0,
+            "ys": 0.0,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

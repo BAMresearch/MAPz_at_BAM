@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "Th Geyer"
+    },
+    "metadata": {
+        "displayName": "Flask_Station",
+        "displayCategory": "flaskHolder",
+        "displayVolumeUnits": "mL",
+        "tags": ["FLASK_10_ML", "FLASK_25_ML", "FLASK_50_ML", "FLASK_100_ML", "FLASK_250_ML"]
+    },
+    "dimensions": {
+        "xDimension": 80,
+        "yDimension": 400,
+        "zDimension": 30,
+		"holeWidth": 57,
+		"spacingWidth": 0,
+		"columnsInOddRows": 1,
+		"columnsInEvenRows": 1,
+		"rows": 5,
+		"totalPlaces": 5
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 0,
+            "y0": 0,
+            "z0": 14.3
+        },
+        "spacings": {
+            "xs": 0.0,
+            "ys": 100,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+    }
+}

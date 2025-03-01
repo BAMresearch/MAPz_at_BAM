@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "3D-Printed"
+    },
+    "metadata": {
+        "displayName": "3DPrinted_10ml_round_bottom_flask_rack",
+        "displayCategory": "flaskHolder",
+        "displayVolumeUnits": "mL",
+        "tags": ["FLASK_10_ML"]
+    },
+    "dimensions": {
+        "xDimension": 127.76,
+        "yDimension": 85.48,
+        "zDimension": 18.50,
+		"holeWidth": 33.4,
+		"spacingWidth": 9.95,
+		"columnsInOddRows": 2,
+		"columnsInEvenRows": 2,
+		"rows": 2,
+		"totalPlaces": 4
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 61.2,
+            "y0": 20.0,
+            "z0": 8.0     
+        },
+        "spacings": {
+            "xs": 43.25,
+            "ys": 44.25,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

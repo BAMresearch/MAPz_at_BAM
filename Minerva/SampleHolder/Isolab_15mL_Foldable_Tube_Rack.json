@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "Isolab_15mL_Foldable"
+    },
+    "metadata": {
+        "displayName": "Isolab_15mL_Foldable_Tube_Rack",
+        "displayCategory": "tubeRack",
+        "displayVolumeUnits": "mL",
+        "tags": ["FALCON_TUBE_15_ML"]
+    },
+    "dimensions": {
+        "xDimension": 272,
+        "yDimension": 141,
+        "zDimension": 73.8,
+		"holeWidth": 18.4,
+		"spacingWidth": 6.5,
+		"columnsInOddRows": 10,
+		"columnsInEvenRows": 10,
+		"rows": 5,
+		"totalPlaces": 50
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 24.0,
+            "y0": 20.4,
+            "z0": 2
+        },
+        "spacings": {
+            "xs": 24.9,
+            "ys": 24.9,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

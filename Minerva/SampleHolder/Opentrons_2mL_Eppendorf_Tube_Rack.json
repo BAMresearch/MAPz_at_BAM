@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "Opentrons"
+    },
+    "metadata": {
+        "displayName": "opentrons_24_tuberack_eppendorf_2ml_safelock_snapcap",
+        "displayCategory": "tubeRack",
+        "displayVolumeUnits": "mL",
+        "tags": ["EPPENDORF_TUBE_2_ML"]
+    },
+    "dimensions": {
+        "xDimension": 127.76,
+        "yDimension": 85.48,
+        "zDimension": 78.0,
+		"holeWidth": 15,
+		"spacingWidth": 10,
+		"columnsInOddRows": 6,
+		"columnsInEvenRows": 6,
+		"rows": 4,
+		"totalPlaces": 24
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 18.21,
+            "y0": 10.3,
+            "z0": 7.0
+        },
+        "spacings": {
+            "xs": 19.89,
+            "ys": 19.28,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

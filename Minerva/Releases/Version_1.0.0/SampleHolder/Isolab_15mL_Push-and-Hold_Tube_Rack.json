@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "Isolab_15mL_Push&Hold"
+    },
+    "metadata": {
+        "displayName": "Isolab_15mL_Push&Hold_Tube_Rack",
+        "displayCategory": "tubeRack",
+        "displayVolumeUnits": "mL",
+        "tags": ["FALCON_TUBE_15_ML"]
+    },
+    "dimensions": {
+        "xDimension": 153.0,
+        "yDimension": 126.0,
+        "zDimension": 32.5,
+		"holeWidth": 16.8,
+		"spacingWidth": 9.2,
+		"columnsInOddRows": 5,
+		"columnsInEvenRows": 5,
+		"rows": 5,
+		"totalPlaces": 25
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 15.7,
+            "y0": 15.7,
+            "z0": 0.5
+        },
+        "spacings": {
+            "xs": 26.0,
+            "ys": 26.4,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 12.7,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+	}
+}

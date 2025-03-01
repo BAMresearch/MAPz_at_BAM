@@ -1,0 +1,39 @@
+{
+    "brand": {
+        "brand": "Th Geyer"
+    },
+    "metadata": {
+        "displayName": "Cork_Ring_Small",
+        "displayCategory": "flaskHolder",
+        "displayVolumeUnits": "mL",
+        "tags": ["FLASK_10_ML", "FLASK_25_ML", "FLASK_50_ML", "FLASK_100_ML", "FLASK_250_ML"]
+    },
+    "dimensions": {
+        "xDimension": 80,
+        "yDimension": 80,
+        "zDimension": 30,
+		"holeWidth": 57,
+		"spacingWidth": 0,
+		"columnsInOddRows": 1,
+		"columnsInEvenRows": 0,
+		"rows": 1,
+		"totalPlaces": 1
+    },
+    "wells": {
+        "offsetTopLeft": {
+            "x0": 0,
+            "y0": 0,
+            "z0": 14.3
+        },
+        "spacings": {
+            "xs": 0.0,
+            "ys": 0.0,
+            "zs": 0.0
+        },
+        "evenRowAdditionalOffset": {
+            "xe": 0.0,
+            "ye": 0.0,
+            "ze": 0.0
+        }
+    }
+}
