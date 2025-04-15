@@ -1,15 +1,18 @@
 # MINERVA Workflow Generator
 
+This repository is part of the following publication:
+
+[B. Ruehle, _Natural Language Processing for Automated Workflow and Knowledge Graph Generation in Self-Driving Labs_, ChemRxiv, **2025**, DOI: 10.26434/chemrxiv-2025-0p7xx](https://chemrxiv.org/engage/chemrxiv/article-details/67adc1fc81d2151a0244de56)
+
+If you use the trained LLMs, files, data, software, or code given here in your own research, please cite the above article.
+
 ![Image](Documentation/Images/Minerva-Workflow-Generator_ToC.jpg "MINERVA-Workflow-Generator")
 
 This repository contains files for the automated workflow and knowledge graph generation from unstructured natural language input with LLMs, as well as the Node Editor that can be used in the materials acceleration platform [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva). It also contains some examples and links to further resources.
 
-The fully trained LLM Models and the raw and cleaned datasets will be made available on [huggingface](https://huggingface.co/bruehle) and [Zenodo](https://zenodo.org/). 
+The fully trained LLM Models and the raw and cleaned datasets are available on [huggingface](https://huggingface.co/bruehle). 
 - The datasets contain inputs (i.e., experimental procedures based on [this dataset](https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873/1)) and annotated outputs (i.e., action graphs) used for training the LLMs.
 - The models are fine-tuned LLMs based on [BigBirdPegasus](https://huggingface.co/google/bigbird-pegasus-large-bigpatent) and [LED-Base](https://huggingface.co/allenai/led-base-16384) for generating action graphs from experimental procedures. 
-
-| **Note:** The files in this repository are part of an unpublished manuscript. Once accepted for publication, the files and links will be added here. In the meantime, only the documentation and some examples are available to give an impression of the features, scope, and usage of the software. | 
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 ## Video
 A short video showing the node editor, the automatic workflow generation from natural language input, and the knowledge graph generation can be found [here](Documentation/Videos/Workflow-Generator_Example.mp4).
@@ -25,13 +28,12 @@ https://github.com/user-attachments/assets/2f286814-34d9-4448-8b43-3fe5becb349f
 ## Installation:
 Clone (or download) the repository, set up a virtual environment, and install the packages from requirements.txt. The node editor also requires [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva) to be installed (for installation instructions, see the linked repository).
 
-Exemplary installation for Windows:
+Exemplary installation for Windows (assuming you already created a virtual environment called `venv` when installing [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva)):
 ```commandline
 git clone https://github.com/BAMresearch/MAPz_at_BAM
-cd MAPz_at_BAM\Minerva-Workflow-Generator
-python -m venv .\venv
-.\venv\Scripts\activate
-pip install -r requirements.txt
+cd MAPz_at_BAM
+venv\Scripts\activate
+pip install -r Minerva-Workflow-Generator/requirements.txt
 ```
 ## How to use the LLMs:
 The LLMs can be used for creating action graphs from experimental procedures written in natural language. When used from within the [node editor](#how-to-use-the-node-editor-for-creating-a-workflow), the action graphs will be turned directly into node graphs. To try and compare the different models "stand-alone", i.e., without the node editor, simply run the following code after [installing the dependencies](#installation):
@@ -63,7 +65,7 @@ if __name__ == '__main__':
     elif 'LED-Base-16384' in model_id:
         max_length = 1024
     
-    model = AutoModelForSeq2SeqLM.from_pretrained(model_id, device_map='auto')
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_id, device_map='auto')  # try device_map='cpu' if you get an out-of-memory exception 
     tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
     pipe = pipeline('text2text-generation', model=model, tokenizer=tokenizer)
 
@@ -87,7 +89,7 @@ Use the `Mouse Wheel` to zoom in or out and press the `Middle Mouse Button` for 
 Besides switching between the `Reaction Editor` and the `Configuration Editor`, the `View` menu in the menu bar can also be used for Collapsing/Expanding all nodes (same as pressing the `^` or `v` buttons on the nodes), toggling the display of images for hardware nodes in the `Configuration Editor`, and automatically arranging the nodes in the `Reaction Editor` in a grid pattern (currently not supported in the `Configuration Editor`). This can be helpful for making large/complex node setups more compact and easier to view and navigate.   
 
 ### Shortcuts
-Most shortcuts have their expected default functionality. You can use `<CTRL>+C` for copying, `<CTRL>+V` for pasting, `<CTRL>+S` for saving, `<CTRL>+O` for opening, and `<CTRL>+E` for exporting the node setup as an executable python file. `<CTRL>+X` is used for exportng the current node setup as a hardware configuration rather than cutting, though.
+Most shortcuts have their expected default functionality. You can use `<CTRL>+C` for copying, `<CTRL>+V` for pasting, `<CTRL>+S` for saving, `<CTRL>+O` for opening, and `<CTRL>+E` for exporting the node setup as an executable python file. `<CTRL>+X` is used for exporting the current node setup as a hardware configuration rather than cutting, though.
 
 ### File Formats
 Node  setups from the `Reaction Editor` are saved as `.rxn` files, while node setups from the `Configuration Editor` are saved as `.conf` files. Both are essentially just json files that contain information about the types, input fields, locations, and links of the nodes in a way that can be understood (and re-opened) by the Node Editor.
@@ -102,6 +104,14 @@ To generate a Knowledge Graph from the current `Reaction Node` setup, please cho
 **Please Note:** Depending on your Hardware and the LLM Model you selected, this process can take some time (up to a few minutes).
 
 To automatically generate a workflow from syntheses procedures in natural language, please select `File->Create from Natural Language...`, paste the synthesis description into the text field, select the LLM Model you want to use from the dropdown list, and press `OK`.
+
+### Built-in substitution heuristics and error corrections:
+The node editor will automatically apply certain heuristics and error correction measures when building the node graph from the action graph to handle imprecise experimental descriptions or missing parameters from the synthesis protocol and inform the user of the measures taken through a warning message.
+
+For example, if a stirring step is described as “slow” in the natural language input, a value of “100 rpm” will be used, while for “vigorous” or “quick” or “fast” stirring, a speed of “600 rpm” is assumed. Similarly, a time duration given as “overnight” will be changed to “16 h”, and if a temperature is specified as “room temperature”, it will be set to “25 °C”. For some process steps, default values will be used if certain required values are missing. For example, if a heating/stirring step does not specify a time, temperature and/or speed, 5 min, 25 °C, and 300 rpm will be used as the default for the missing value(s), while for a centrifugation step, 15 min at 8000 rpm and 25 °C are the default, and a sonication step without a specified time will be done for 10 min. In more severe cases, such as a missing or imprecise amount of a chemical, a warning will be generated and the node will be created, but the corresponding field of the node will be left empty rather than trying to “guess” a default value. This gives the user the opportunity to correct this warning manually at the node graph level. If no value is given, and the node graph is compiled to a python script and attempted to run, the Minerva-OS backend will produce an error when it comes to this step.
+
+These substitutions are currently hard coded into the node generation step (see methods `parse_actiongraph` and `_parse_parameters` in the source code), and again somewhat specific to our use case of nano and advanced material synthesis. Other hardware platforms will most probably require different default values and heuristics.
+
 
 ## How to use the generated Knowledge Graphs:
 
