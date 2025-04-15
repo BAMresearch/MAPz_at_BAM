@@ -68,15 +68,19 @@ https://github.com/user-attachments/assets/51650673-b5de-43ec-b29e-ba39b8661c8e
 - Machine learning algorithms for closed-loop optimization (beta)
 
 ## Installation:
-Clone the repository, set up a virtual environment, install the packages from requirements.txt, and create a .pth file in the site-packages directory of the virtual environment (or add the directory to `PYTHONPATH` environment variable to make it available outside of the virtual environment). For Windows:
+Clone (or download) the repository, set up and activate a virtual environment, install the packages from requirements.txt, install the [xArm Python SDK](https://github.com/xArm-Developer/xArm-Python-SDK), and create a .pth file in the site-packages directory of the virtual environment (or add the directory to `PYTHONPATH` environment variable to make it available outside of the virtual environment). For Windows:
 ```commandline
-git clone ...
-cd Minerva
+git clone https://github.com/BAMresearch/MAPz_at_BAM
+cd MAPz_at_BAM
 python -m venv .\venv
-pip install -r requirements.txt
-pip install -r requirements_ML.txt
-cd ..
-cd > .\Minerva\venv\Lib\site-packages\minerva.pth
+venv\Scripts\activate
+pip install -r Minerva\requirements.txt
+git clone https://github.com/xArm-Developer/xArm-Python-SDK.git
+cd xArm-Python-SDK
+python setup.py install
+pip install xarm-python-sdk
+cd ..\..
+cd > .\venv\Lib\site-packages\minerva.pth
 ```
 
 ## How to use:
