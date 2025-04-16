@@ -10,9 +10,18 @@ If you use the trained LLMs, files, data, software, or code in your own research
 
 This repository contains files for the automated workflow and knowledge graph generation from unstructured natural language input with LLMs, as well as the Node Editor that can be used in the materials acceleration platform [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva). It also contains some examples and links to further resources.
 
-The fully trained LLM Models and the raw and cleaned datasets are available on [huggingface](https://huggingface.co/bruehle). A "snapshot" of this repository, the datasets, and LLM models is available on [Zenodo (DOI: 10.5281/zenodo.15228014)](https://zenodo.org/records/15228014).
-- The datasets contain inputs (i.e., experimental procedures based on [this dataset](https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873/1)) and annotated outputs (i.e., action graphs) used for training the LLMs.
-- The models are fine-tuned LLMs based on [BigBirdPegasus](https://huggingface.co/google/bigbird-pegasus-large-bigpatent) and [LED-Base](https://huggingface.co/allenai/led-base-16384) for generating action graphs from experimental procedures. 
+The fully trained LLM Models and the raw and cleaned datasets are available on [huggingface](https://huggingface.co/bruehle):
+- **Models:**
+	- **BigBirdPegasus_Llama**:[BigBirdPegasus_Llama](https://huggingface.co/bruehle/BigBirdPegasus_Llama)
+	- **LED-Base-16384_Llama**:[LED-Base-16384_Llama](https://huggingface.co/bruehle/LED-Base-16384_Llama)
+	- **BigBirdPegasus_Chemtagger**:[BigBirdPegasus_Chemtagger](https://huggingface.co/bruehle/BigBirdPegasus_Chemtagger)
+	- **LED-Base-16384_Chemtagger**:[LED-Base-16384_Chemtagger](https://huggingface.co/bruehle/LED-Base-16384_Chemtagger)
+- **Datasets:**
+	- **SynthesisProcedures2ActionGraphs**:[SynthesisProcedures2ActionGraphs](https://huggingface.co/datasets/bruehle/SynthesisProcedures2ActionGraphs)
+
+A "snapshot" of this repository, the datasets, and LLM models is available on [Zenodo (DOI: 10.5281/zenodo.15228014)](https://zenodo.org/records/15228014).
+
+The datasets contain inputs (i.e., experimental procedures based on [this dataset](https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873/1)) and annotated outputs (i.e., action graphs) used for training the LLMs. The models are fine-tuned LLMs based on [BigBirdPegasus](https://huggingface.co/google/bigbird-pegasus-large-bigpatent) and [LED-Base](https://huggingface.co/allenai/led-base-16384) for generating action graphs from experimental procedures. 
 
 ## Video
 A short video showing the node editor, the automatic workflow generation from natural language input, and the knowledge graph generation can be found [here](Documentation/Videos/Workflow-Generator_Example.mp4).
