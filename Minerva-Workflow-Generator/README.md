@@ -4,7 +4,7 @@ This repository is part of the following publication:
 
 [B. Ruehle, _Natural Language Processing for Automated Workflow and Knowledge Graph Generation in Self-Driving Labs_, ChemRxiv, **2025**, DOI: 10.26434/chemrxiv-2025-0p7xx](https://chemrxiv.org/engage/chemrxiv/article-details/67adc1fc81d2151a0244de56)
 
-If you use the trained LLMs, files, data, software, or code given here in your own research, please cite the above article.
+If you use the trained LLMs, files, data, software, or code in your own research, please cite the above article.
 
 ![Image](Documentation/Images/Minerva-Workflow-Generator_ToC.jpg "MINERVA-Workflow-Generator")
 
@@ -33,7 +33,7 @@ Exemplary installation for Windows (assuming you already created a virtual envir
 git clone https://github.com/BAMresearch/MAPz_at_BAM
 cd MAPz_at_BAM
 venv\Scripts\activate
-pip install -r Minerva-Workflow-Generator/requirements.txt
+pip install -r Minerva-Workflow-Generator/Node_Editor/Version_1.0.0/requirements.txt
 ```
 ## How to use the LLMs:
 The LLMs can be used for creating action graphs from experimental procedures written in natural language. When used from within the [node editor](#how-to-use-the-node-editor-for-creating-a-workflow), the action graphs will be turned directly into node graphs. To try and compare the different models "stand-alone", i.e., without the node editor, simply run the following code after [installing the dependencies](#installation):
