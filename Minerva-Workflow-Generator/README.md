@@ -2,22 +2,22 @@
 
 This repository is part of the following publication:
 
-[B. Ruehle, _Natural Language Processing for Automated Workflow and Knowledge Graph Generation in Self-Driving Labs_, ChemRxiv, **2025**, DOI: 10.26434/chemrxiv-2025-0p7xx](https://chemrxiv.org/engage/chemrxiv/article-details/67adc1fc81d2151a0244de56)
+[B. Ruehle, _Natural Language Processing for Automated Workflow and Knowledge Graph Generation in Self-Driving Labs_, DigitalDiscovery, **2025**, DOI: 10.1039/D5DD00063G](https://pubs.rsc.org/en/Content/ArticleLanding/2025/DD/D5DD00063G)
 
-If you use the trained LLMs, files, data, software, or code in your own research, please cite the above article.
+If you use the trained LLMs, datesets, files, software, or code in your own research, please cite the above article.
 
 ![Image](Documentation/Images/Minerva-Workflow-Generator_ToC.jpg "MINERVA-Workflow-Generator")
 
-This repository contains files for the automated workflow and knowledge graph generation from unstructured natural language input with LLMs, as well as the Node Editor that can be used in the materials acceleration platform [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva). It also contains some examples and links to further resources.
+This repository contains files for the automated workflow and knowledge graph generation from unstructured natural language input with LLMs, as well as the [Node Editor](#how-to-use-the-node-editor-for-creating-a-workflow) that can be used in the materials acceleration platform [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva). It also contains some examples and links to further resources.
 
 The fully trained LLM Models and the raw and cleaned datasets are available on [huggingface](https://huggingface.co/bruehle):
 - **Models:**
-	- **BigBirdPegasus_Llama**:[BigBirdPegasus_Llama](https://huggingface.co/bruehle/BigBirdPegasus_Llama)
-	- **LED-Base-16384_Llama**:[LED-Base-16384_Llama](https://huggingface.co/bruehle/LED-Base-16384_Llama)
-	- **BigBirdPegasus_Chemtagger**:[BigBirdPegasus_Chemtagger](https://huggingface.co/bruehle/BigBirdPegasus_Chemtagger)
-	- **LED-Base-16384_Chemtagger**:[LED-Base-16384_Chemtagger](https://huggingface.co/bruehle/LED-Base-16384_Chemtagger)
+	- **BigBirdPegasus_Llama**: [BigBirdPegasus_Llama](https://huggingface.co/bruehle/BigBirdPegasus_Llama)
+	- **LED-Base-16384_Llama**: [LED-Base-16384_Llama](https://huggingface.co/bruehle/LED-Base-16384_Llama)
+	- **BigBirdPegasus_Chemtagger**: [BigBirdPegasus_Chemtagger](https://huggingface.co/bruehle/BigBirdPegasus_Chemtagger)
+	- **LED-Base-16384_Chemtagger**: [LED-Base-16384_Chemtagger](https://huggingface.co/bruehle/LED-Base-16384_Chemtagger)
 - **Datasets:**
-	- **SynthesisProcedures2ActionGraphs**:[SynthesisProcedures2ActionGraphs](https://huggingface.co/datasets/bruehle/SynthesisProcedures2ActionGraphs)
+	- **SynthesisProcedures2ActionGraphs**: [SynthesisProcedures2ActionGraphs](https://huggingface.co/datasets/bruehle/SynthesisProcedures2ActionGraphs)
 
 A "snapshot" of this repository, the datasets, and LLM models is available on [Zenodo (DOI: 10.5281/zenodo.15228014)](https://zenodo.org/records/15228014).
 
@@ -35,15 +35,22 @@ https://github.com/user-attachments/assets/2f286814-34d9-4448-8b43-3fe5becb349f
 - **Node_Editor:** Releases of the node editor for generating and editing workflows for [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva), and exporting them as knowledge graphs or executable python code.
 
 ## Installation:
-Clone (or download) the repository, set up a virtual environment, and install the packages from requirements.txt. The node editor also requires [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva) to be installed (for installation instructions, see the linked repository).
-
-Exemplary installation for Windows (assuming you already created a virtual environment called `venv` when installing [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva)):
+The node editor requires [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva) to be installed since the nodes are generarted directly from the functions and classes defined in the MINERVA-OS backend (for installation instructions of [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva), see the linked repository). After installing [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva), the additional dependencies from this repository need to be installed into the same virtual environment. Exemplary installation for Windows (assuming you already cloned the repositoy and created a virtual environment called `venv` when installing [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva)):
 ```commandline
-git clone https://github.com/BAMresearch/MAPz_at_BAM
 cd MAPz_at_BAM
 venv\Scripts\activate
 pip install -r Minerva-Workflow-Generator/Node_Editor/Version_1.0.0/requirements.txt
 ```
+
+If you only want to use the LLMs ["stand-alone"](#how-to-use-the-llms), without the node editor, you do not need to install [MINERVA](https://github.com/BAMresearch/MAPz_at_BAM/tree/main/Minerva) first. In that case, simply clone or download the repostory, create a new virtual environment, and install the dependencies from `requirements.txt`. For Windows:
+```commandline
+git clone https://github.com/BAMresearch/MAPz_at_BAM
+cd MAPz_at_BAM
+python -m venv venv
+venv\Scripts\activate
+pip install -r Minerva-Workflow-Generator\Node_Editor\Version_1.0.0\requirements.txt
+```
+
 ## How to use the LLMs:
 The LLMs can be used for creating action graphs from experimental procedures written in natural language. When used from within the [node editor](#how-to-use-the-node-editor-for-creating-a-workflow), the action graphs will be turned directly into node graphs. To try and compare the different models "stand-alone", i.e., without the node editor, simply run the following code after [installing the dependencies](#installation):
 
@@ -86,7 +93,7 @@ if __name__ == '__main__':
 ![Image](Documentation/Images/Minerva_Node_Editor_Example.jpg "MINERVA_Node_Editor_Example")
 
 ### Basics
-Most of the basic functionalities can be seen from the video shown [above](#video-showcase). The Node Editor has two views, the `Reaction Editor` for setting up nodes that describe the reaction, and the `Configuration Editor` for defining the hardware configuration of the system. Both (partially) influence each other, e.g., a container should be defined in the `Configuration Editor` and assigned to a `Sample Holder` hardware there, and then the same container node can be used in the `Reaction Editor`. To switch between views, click on the `View` menu in the menu bar and select the Node Editor you want to switch to.
+Most of the basic functionalities can be seen from the video shown [above](#video-showcase). The Node Editor has two views, the `Reaction Editor` for setting up nodes that describe the reaction, and the `Configuration Editor` for defining the hardware configuration of the system. Both (partially) influence each other, e.g., when adding a container node to the `Reaction Editor`, the `parent hardware` dropdown menu of the node will only list hardware components and sample holders that are defined in the `Configuration Edior`. To switch between views, click on the `View` menu in the menu bar and select the Node Editor view you want to switch to.
 
 ### Adding/Removing and Linking/Unlinking Nodes
 New Nodes can be added by right-clicking anywhere in the Node Editor and selecting the Node from the popup menu, or by selecting the nodes from the `Nodes` menu in the menu bar. Nodes can be linked by dragging the output from one node to the appropriate input field of another node (or vice versa) using the `Left Mouse Button`. Nodes can be deleted by selecting the node(s) and then pressing the `<DEL>` key. They can be unlinked (or re-linked to a different input field or node) by pressing the `<CTRL>` key and dragging the node link. 
@@ -139,3 +146,10 @@ The exported .csv files contain all relations as tab-separated values in the ord
 | slot_number                                     | int               | is_a          |
 
 A jupyter notebook that demonstrates how the knowledge graphs can be visualized and queried from the .csv files with [networkx](https://networkx.org/documentation/stable/index.html) and [pyplot](https://matplotlib.org/stable/tutorials/pyplot.html) can be found [here](Examples/Knowledge_Graphs.ipynb).
+
+
+## License
+The following licenses are used for the files in this project (see also the [license file](./LICENSE.txt) for details):
+- The **publication** describing the project was published in [RSC DigitalDiscovery](https://pubs.rsc.org/en/Content/ArticleLanding/2025/DD/D5DD00063G) under the [CC-BY-4.0 license](https://creativecommons.org/licenses/by/4.0/).
+- All **python code**, **datasets**, **Large Language Models**, as well as the **configuration** and **example files** in this project are published under the [MIT license](https://opensource.org/license/mit).
+- The **documentation** and **videos** are published under the [CC-BY-NC-ND-4.0 license](https://creativecommons.org/licenses/by-nc-nd/4.0/).
