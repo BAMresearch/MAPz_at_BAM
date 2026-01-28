@@ -1,0 +1,56 @@
+e
+var h
+var r
+var j
+var y
+var z
+var c
+var p
+var o
+var d
+set_pgstat_chan 0
+set_pgstat_mode 3
+set_acquisition_frac_autoadjust 50
+set_max_bandwidth 100k
+cell_off
+set_range ba 210m
+set_autoranging ba 210m 210m
+set_range ab 4200m
+set_autoranging ab 210m 4200m
+meas_loop_ocp o 200m 60
+  pck_start
+    pck_add o
+  pck_end
+endloop
+set_range ba 210m
+set_autoranging ba 210n 210m
+set_range ab 4200m
+set_autoranging ab 4200m 4200m
+store_var d 0 ab
+add_var d o
+set_e d
+cell_on
+meas_loop_ca p c d 200m 10
+  pck_start
+    pck_add p
+    pck_add c
+  pck_end
+endloop
+set_range ba 210m
+set_autoranging ba 210n 210m
+set_range ab 4200m
+set_autoranging ab 210m 4200m
+meas_loop_eis h r j 10m 100k 10m 71 d eis_opt(500m 1) eis_acdc(y p z c)
+  pck_start
+    pck_add h
+    pck_add r
+    pck_add j
+    pck_add y
+    pck_add p
+    pck_add z
+    pck_add c
+  pck_end
+endloop
+on_finished:
+  cell_off
+

@@ -1,0 +1,22 @@
+e
+var c
+var p
+set_pgstat_chan 0
+set_pgstat_mode 6
+set_acquisition_frac_autoadjust 50
+set_max_bandwidth 40
+set_range ab 2100m
+set_autoranging ab 210m 2100m
+set_range db 210u
+set_autoranging db 210u 210u
+set_i 0
+cell_on
+meas_loop_cp p c 5700n 100m 300100m
+  pck_start
+    pck_add p
+    pck_add c
+  pck_end
+endloop
+on_finished:
+  cell_off
+
